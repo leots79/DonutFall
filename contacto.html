@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" href="style/contacto.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="img/Logo-Donut-02.png" type="image/x-icon">
+    <title>Donut Fall</title>
+</head>
+<body>
+
+    <nav>
+      <div class="logo">
+        <a href="index.html"><img src="img/Logo-Donut-02.png" alt="Logo" /></a>
+      </div>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="tienda.html">Tienda</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <section class="contacto">
+        <h1>Contactanos</h1>
+        <p>¡Nos encantaría saber de ti! Si tienes alguna pregunta, comentario o sugerencia, no dudes en contactarnos.</p>
+        <form id="contacto-nuevo">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <img src="img/Logo-Donut.png" alt="Logo" />
+          </div>
+          <div class="footer-links">
+            <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="tienda.html">Productos</a></li>
+              <li><a href="nosotros.html">Nosotros</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="footer-social">
+            <ul>
+              <li>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-info">
+          <p>&copy; 2024 Leots Digital. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="app/contacto.js"></script>
+</body>
+</html>

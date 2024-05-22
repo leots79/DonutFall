@@ -1,0 +1,105 @@
+/* Estilos generales */
+body{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    background: #FFEBF0;
+}
+  
+  .game-sale {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #ffebf0;
+    width: 70%;
+    color: #2a121f;
+
+  }
+  
+  .poster, .details {
+    flex: 1 1 50%;
+    padding: 10px;
+  }
+  
+  .slider-wrapper-tienda {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .slider-tienda img {
+    width: 100%;
+    display: block;
+  }
+  
+  .slider-nav {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .slider-nav a {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin: 0 5px;
+  }
+  
+  .details h1 {
+    font-size: 44px;
+    color: #D95DA1;
+    margin-bottom: 10px;
+  }
+  
+  .details p {
+    margin: 10px 0;
+    margin-bottom: 5vh;
+    margin-top: 2.5vh;
+    font-size: 1.1em;
+  }
+  
+  .details ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .details li {
+    margin-bottom: 10px;
+  }
+  
+  .details .highlight {
+    font-weight: bold;
+  }
+  
+  .price {
+    font-size: 2em;
+    font-weight: bold;
+    color: #e60000;
+    margin: 10px 0;
+  }
+  
+  .buy-button {
+    background-color: #5566e6;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .buy-button:hover {
+    background-color: #4a59cb;
+  }
+  
+  /* Media Queries para dispositivos móviles */
+  @media (max-width: 768px) {
+    .game-sale {
+      flex-direction: column;
+      width: 100%;
+    }
+    
+    .poster, .details {
+      flex: 1 1 100%;
+    }
+  }
+  

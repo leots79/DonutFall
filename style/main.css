@@ -1,0 +1,884 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Sora;
+}
+
+body{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    background: #FFEBF0;
+}
+
+.degradado{
+    background-color: #141837;
+}
+
+
+/*----------------------------------------------------*/
+/*----------------------------------------------------*/
+/* Estilos del nav */
+nav {
+    background-color: #FFDEF0; 
+    padding: 20px;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+.logo {
+    margin-right: auto;
+    -webkit-transition: -webkit-transform 1s;
+}
+
+.logo:hover{
+    -webkit-transform: rotate(360deg) translateZ(0);
+}
+
+.logo img{
+    width: 45px;
+    -webkit-transition: -webkit-transform 1s;
+}
+
+.logo img:hover{
+    -webkit-transform: rotate(360deg) translateZ(0);
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #666666; /* Gris */
+    font-size: 18px;
+}
+
+/*----------------------------------------------------*/
+/*----------------------------------------------------*/
+/*INDEX*/
+
+.imagen-fondo {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+}
+
+.imagen-fondo img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+/* Estilos de las imágenes superpuestas */
+/*main*/
+#img-inicio-superior-01 {
+    position: absolute;
+    top: 8%;
+    left: 60%;
+    width: 250px;
+    height: auto;
+}
+
+#img-inicio-superior-02 {
+    position: absolute;
+    top: 70%;
+    left: 60%;
+    width: 250px;
+    height: auto;
+    transition: filter 0.3s ease, width 0.3s ease;
+
+}
+
+#img-inicio-superior-02:hover {
+    filter: brightness(1.1) saturate(1.1) contrast(1.05);
+    width: 255px;
+}
+
+#txt-inicio-superior{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 550px;
+    height: auto;
+}
+
+#txt-inicio-superior p{
+    font-weight: bold;
+    font-size: 2em;
+    color: #FFFAFF;
+    text-shadow: 2px 2px 4px rgba(209, 89, 156, 1);
+}
+
+/*section01*/
+
+.text-left {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  width: 50%;
+  height: auto;
+}
+
+.text-left p {
+  font-weight: bold;
+  font-size: 2.5em;
+  color: #471F35;
+}
+
+.text-right {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  width: 500px;
+  height: auto;
+}
+
+.text-right p {
+  font-weight: regular;
+  font-size: 1.5em;
+  color: #471F35;
+}
+
+/*imagenes representativas*/
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+}
+
+.parte-1,
+.parte-2 {
+    display: flex;
+    align-items: center;
+}
+
+.imagen-izquierda,
+.texto-derecha,
+.texto-izquierda,
+.imagen-derecha {
+    flex: 1;
+}
+
+.imagen-derecha img:hover,
+.imagen-izquierda img:hover{
+    filter: brightness(1.1) saturate(1.1);
+    height: 450px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.imagen-izquierda img,
+.imagen-derecha img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    transition: filter 0.3s ease, height 0.3s ease, box-shadow 0.3s ease;
+}
+
+.texto-derecha,
+.texto-izquierda {
+    color: #471F35;
+
+}
+
+.texto-derecha p,
+.texto-izquierda h2,
+.texto-izquierda p {
+    margin-bottom: 10px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 2em;
+    padding-left: 30%;
+    width: 70%;
+    height: auto;
+    line-height: 1.5;
+}
+
+/*personajes*/
+
+h2 {
+    text-align: center;
+    font-size: 5em;
+    margin-bottom: 18vh;
+    margin-top: 15vh;
+    color: #642B4A;
+}
+
+.contenedor-personaje {
+    position: relative;
+    width: 100%;
+    margin-bottom: 15vh;
+}
+
+.rectangulo {
+    width: 100%;
+    height: 250px;
+    background-color: #642B4A; 
+}
+
+.cuadro-izquierda {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    width: 45%; /* Ajusta el ancho para dispositivos grandes */
+    max-width: 300px;
+    height: 120%;
+    background-color: #fFDEF0;
+    border: 15px solid #642B4A;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cuadro-izquierda img:hover {
+    max-height: 380px;
+    filter: brightness(1.1) saturate(1.05) drop-shadow(0px 0px 12px rgba(0, 0, 0, 0.6));
+}
+
+.cuadro-izquierda img {
+    width: auto;
+    max-height: 300px;
+    filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.5));
+    transition: filter 0.3s ease, max-height 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cuadro-derecha {
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    width: 300px; 
+    height: 200px; 
+    background-color: #642B4A; 
+    display: flex;
+    flex-direction: column; /* Cambiamos la dirección del layout a columna */
+    justify-content: center;
+    align-items: left;
+    color: #FFDEF0;
+}
+
+.cuadro-derecha h3 {
+    font-size: 4.5em;
+}
+
+.cuadro-derecha p {
+    font-size: 1.2em;
+    margin-bottom: 3vh;
+}
+
+/*Miguel*/
+
+.cuadro-izquierda-personaje {
+    position: absolute;
+    top: 50%;
+    left: 68%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 300px;
+    background-color: #FFDEF0;
+    border: 15px solid #642B4A;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cuadro-izquierda-personaje img {
+    width: auto;
+    max-height: 300px;
+    filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.5));
+    transition: filter 0.3s ease, max-height 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cuadro-izquierda-personaje img:hover{
+    max-height: 380px;
+    filter: brightness(1.1) saturate(1.05) drop-shadow(0px 0px 12px rgba(0, 0, 0, 0.6));
+}
+
+.cuadro-derecha-personaje {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    width: 300px; 
+    height: 200px; 
+    background-color: #642B4A; 
+    display: flex;
+    flex-direction: column; /* Cambiamos la dirección del layout a columna */
+    justify-content: center;
+    align-items: left;
+    color: #FFDEF0;
+}
+
+.cuadro-derecha-personaje h3 {
+    font-size: 4.5em;
+}
+
+.cuadro-derecha-personaje p {
+    font-size: 1.2em;
+    margin-bottom: 3vh;
+}
+
+/*galeria*/
+
+.container {
+	padding: 2rem;
+}
+
+.slider-wrapper {
+	position: relative;
+	max-width: 48rem;
+	margin: 0 auto;
+}
+
+.slider {
+	display: flex;
+	aspect-ratio: 16 / 9;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+	box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+	border-radius: 0.5rem;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+.slider::-webkit-scrollbar {
+	display: none;
+}
+
+.slider img {
+	flex: 1 0 100%;
+	scroll-snap-align: start;
+	object-fit: cover;
+}
+
+.slider-nav {
+	display: flex;
+	column-gap: 1rem;
+	position: absolute;
+	bottom: 1.25rem;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1;
+}
+
+.slider-nav a {
+	width: 0.5rem;
+	height: 0.5rem;
+	border-radius: 50%;
+	background-color: #fff;
+	opacity: 0.75;
+	transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+	opacity: 1;
+}
+
+/*----------------------------------------------------*/
+/*----------------------------------------------------*/
+/*GALERÍA*/
+
+/*Galeria grid*/
+
+
+/*----------------------------------------------------*/  
+/*----------------------------------------------------*/
+  /*TIENDA*/
+
+  
+
+/*----------------------------------------------------*/
+/*----------------------------------------------------*/
+/*CONTACTO*/
+
+
+
+/*----------------------------------------------------*/
+/*----------------------------------------------------*/
+/*FOOTER*/
+
+.footer {
+    background-color: #2a121f;
+    color: #fff;
+    padding: 30px 0;
+    margin-top: 150px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo img {
+    max-width: 150px;
+}
+
+.footer-links ul,
+.footer-social ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li,
+.footer-social ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-links ul li a,
+.footer-social ul li a {
+   text-decoration: none;
+   color: #ffebf0;
+}
+
+.footer-info {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-info p {
+    font-size: 14px;
+    color: #ffebf0;
+}
+
+/*----------------------------------------------------*/
+/*----------------------------------------------------*/
+/*NOSOTROS*/
+
+
+
+/*----------------------------------------------------*/
+/*----------------------------------------------------*/
+/*RESPONSIVE*/
+
+@media screen and (max-width: 1024px) {
+	.image-grid {
+		--num-cols: 2;
+		--row-height: 200px;
+	}
+}
+  
+/* Estilos para pantallas de 1440p */
+@media screen and (min-width: 1920px) {
+    /*Barra navegación*/
+    
+    /* Ajusta el tamaño de las imágenes superpuestas en la sección principal */
+    #img-inicio-superior-01,
+    #img-inicio-superior-02 {
+      width: 400px;
+    }
+
+    #img-inicio-superior-01{
+        top: 5%;
+    }
+
+    #img-inicio-superior-02 {
+        top: 75%
+      }
+  
+    /* Ajusta el tamaño del texto en la sección principal */
+    #txt-inicio-superior {
+      width: 610px;
+      left: 57%;
+      top: 55%;
+    }
+
+    #txt-inicio-superior p{
+        font-weight: bold;
+        font-size: 2.4em;
+    }
+  
+    /* Ajusta el tamaño del texto en la sección 01 */
+    #txt-section-01-01 {
+      width: 60%;
+    }
+  
+    /* Ajusta el tamaño del texto en la sección 01 */
+    #txt-section-01-02 {
+      width: 600px;
+    }
+  
+    /* Ajusta el tamaño de las imágenes en la sección de mapas */
+    .imagen-izquierda img,
+    .imagen-derecha img {
+      height: 400px;
+    }
+  
+    /* Ajusta el tamaño del texto en la sección de mapas */
+    .texto-derecha p,
+    .texto-izquierda h2,
+    .texto-izquierda p {
+      font-size: 2.5em;
+    }
+  
+    /* Ajusta el tamaño del h2 en la sección de personajes */
+    h2 {
+      font-size: 6em;
+    }
+  
+    /* Ajusta el tamaño de las imágenes de los personajes */
+    .cuadro-izquierda img,
+    .cuadro-izquierda-personaje img {
+      max-height: 600px;
+    }
+  
+    /* Ajusta el tamaño del texto en la sección de personajes */
+    .cuadro-derecha p,
+    .cuadro-derecha-personaje p {
+      font-size: 1.5em;
+    }
+
+    .rectangulo{
+        height: 300px;
+    }
+
+    .cuadro-izquierda,
+    .cuadro-izquierda-personaje{
+        width: 400px;
+        height: 400px;
+    }
+    .cuadro-derecha-personaje,
+    .cuadro-derecha{
+        width: 500px; 
+        height: 200px; 
+    }
+
+    .slider-wrapper {
+        position: relative;
+        max-width: 78rem;
+        margin: 0 auto;
+    }
+    .game-sale {
+        width: 60%;
+        left: 10%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    /*Barra Navegacion*/
+    nav {
+        background-color: #FFDEF0; 
+        padding: 10px;
+        display: flex;
+        justify-content: center; /* Centra horizontalmente */
+        align-items: center;
+    }
+
+    .logo {
+        margin: auto; /* Elimina el margen */
+        margin-right: 20px;
+    }
+
+    .logo img{
+        width: 30px;
+    }
+
+    nav ul {
+        text-align: center; /* Centra los elementos del menú */
+    }
+
+    nav ul li {
+        display: inline-block; /* Cambia la visualización a bloque */
+        margin-right: 10px 0; /* Añade un margen */
+    }
+
+    nav ul li a{
+        font-size: 14px;
+    }
+    
+    .imagen-fondo {
+        position: relative;
+        max-width: 100%;
+    }
+    
+    .imagen-fondo img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    
+    /* Estilos de las imágenes superpuestas */
+    /*main*/
+    #img-inicio-superior-01 {
+        position: absolute;
+        top: 5%; /* Ajusta la posición verticalmente para dispositivos móviles */
+        left: 70%; /* Centra horizontalmente en el 50% del contenedor */
+        transform: translateX(-50%); /* Centra horizontalmente */
+        width: 20%; /* Redimensiona el ancho para dispositivos móviles */
+        max-width: 250px; /* Establece un máximo para evitar que se agrande demasiado */
+        height: auto;
+    }
+    
+    #img-inicio-superior-02 {
+        position: absolute;
+        top: 75%; /* Ajusta la posición verticalmente para dispositivos móviles */
+        left: 70%; /* Centra horizontalmente en el 50% del contenedor */
+        transform: translateX(-50%); /* Centra horizontalmente */
+        width: 25%; /* Redimensiona el ancho para dispositivos móviles */
+        max-width: 250px; /* Establece un máximo para evitar que se agrande demasiado */
+        height: auto;
+        transition: filter 0.3s ease, width 0.3s ease;
+    }
+    
+    #img-inicio-superior-02:hover {
+        filter: brightness(1.1) saturate(1.1) contrast(1.05);
+        width: 30%; /* Redimensiona ligeramente al hacer hover */
+    }
+    
+    #txt-inicio-superior{
+        position: absolute;
+        top: 42%; /* Ajusta la posición verticalmente para dispositivos móviles */
+        left: 75%; /* Centra horizontalmente en el 50% del contenedor */
+        transform: translateX(-50%); /* Centra horizontalmente */
+        width: 48%; /* Redimensiona el ancho para dispositivos móviles */
+        max-width: 550px; /* Establece un máximo para evitar que se agrande demasiado */
+        height: auto;
+    }
+    
+    #txt-inicio-superior p{
+        font-weight: bold;
+        font-size: 0.9em; /* Redimensiona el tamaño del texto para dispositivos móviles */
+        color: #FFFAFF;
+        text-shadow: 2px 2px 4px rgba(209, 89, 156, 1);
+    }
+    
+    .text-left {
+        position: absolute;
+        top: 10%; /* Ajusta la posición verticalmente para dispositivos móviles */
+        left: 8%; /* Ajusta la posición horizontalmente para dispositivos móviles */
+        width: 60%; /* Redimensiona el ancho para dispositivos móviles */
+        height: auto;
+    }
+    
+    .text-left p {
+        font-weight: bold;
+        font-size: 1em; /* Redimensiona el tamaño del texto para dispositivos móviles */
+        color: #471F35;
+    }
+    
+    .text-right {
+        position: absolute;
+        top: 28%; /* Ajusta la posición verticalmente para dispositivos móviles */
+        left: 45%; /* Ajusta la posición horizontalmente para dispositivos móviles */
+        width: 50%; /* Redimensiona el ancho para dispositivos móviles */
+        height: auto;
+    }
+    
+    .text-right p {
+        font-weight: normal; /* Cambia 'regular' a 'normal' */
+        font-size: .65em; /* Redimensiona el tamaño del texto para dispositivos móviles */
+        color: #471F35;
+    }
+    
+    .contenedor {
+        display: flex;
+        flex-direction: column-reverse; /* Cambia la dirección de flexión a 'column' para dispositivos móviles */
+    }
+    
+    .parte-1,
+    .parte-2 {
+        display: flex;
+        flex-direction: column; /* Cambia la dirección de flexión a 'column' para que los elementos se apilen uno encima del otro en dispositivos móviles */
+        align-items: center; /* Centra los elementos horizontalmente en dispositivos móviles */
+        margin-bottom: 20px; /* Añade un espacio entre las partes en dispositivos móviles */
+    }
+    
+    .imagen-izquierda,
+    .texto-derecha,
+    .texto-izquierda,
+    .imagen-derecha {
+        width: 100%; /* Establece el ancho de los elementos al 100% para que se ajusten al ancho de la pantalla en dispositivos móviles */
+    }
+    
+    .imagen-derecha img:hover,
+    .imagen-izquierda img:hover {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .imagen-izquierda img,
+    .imagen-derecha img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    
+    .texto-derecha,
+    .texto-izquierda {
+        color: #471F35;
+        text-align: left; /* Centra el texto en dispositivos móviles */
+    }
+
+    
+    .texto-derecha p,
+    .texto-izquierda h2,
+    .texto-izquierda p {
+        font-weight: bold;
+        text-align: center;
+        font-size: 1.5em; /* Redimensiona el tamaño del texto para dispositivos móviles */
+        line-height: 1.5;
+        margin: 50px 0; /* Ajusta los márgenes del texto en dispositivos móviles */
+    }
+     
+    /*Personajes*/
+    h2 {
+        text-align: center; /* Centra el texto del h2 */
+        font-size: 2.5em; /* Tamaño de fuente del h2 */
+        margin-bottom: 8vh; /* Espacio entre el h2 y la siguiente sección */
+        margin-top: 5vh;
+        color: #642B4A;
+    }
+    
+    .contenedor-personaje {
+        display: flex; /* Cambia a flexbox */
+        flex-direction: column; /* Cambia la dirección a columna */
+        align-items: center; /* Centra los elementos horizontalmente */
+        margin-bottom: 5vh;
+    }
+    
+    .rectangulo {
+        width: 100%;
+        height: 200px;
+        background-color: #642B4A; 
+    }
+    
+    .cuadro-izquierda {
+        top: 50%;
+        left: 28%;
+        width: 100%;
+        max-width: 25vh;
+        height: 80%;
+        border: 0px;
+    }
+
+    
+    
+    
+    .cuadro-izquierda-personaje img,
+    .cuadro-izquierda img {
+        width: auto;
+        max-height: 15vh;
+        filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.5));
+    }
+
+    .cuadro-izquierda img{
+        max-height: 18vh;
+    }
+    
+    .cuadro-derecha {
+        top: 50%;
+        left: 78%;
+        width: 20vh; 
+        height: 50px; 
+    }
+    
+    .cuadro-derecha-personaje h3,
+    .cuadro-derecha h3 {
+        font-size: 1.5em;
+    }
+    
+    .cuadro-derecha-personaje p,
+    .cuadro-derecha p {
+        font-size: .9em;
+        margin-bottom: 3vh;
+    }
+    
+    /*Miguel*/
+    
+    .cuadro-izquierda-personaje {
+        top: 50%;
+        left: 73%;
+        width: 100%;
+        max-width: 23vh;
+        height: 80%;
+        border: 0px;
+    }
+
+    .cuadro-izquierda img:hover,
+    .cuadro-izquierda-personaje img:hover{
+        width: auto;
+        padding-top: 3vh;
+        max-height: 18vh;
+        filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.5));
+    }
+    
+    .cuadro-derecha-personaje {
+        top: 50%;
+        left: 25%;
+        width: 20vh; 
+        height: 50px;
+    }
+
+    /*FOOTER*/
+    .footer {
+        padding: 30px 0;
+        margin-top: 150px;
+    }
+    
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .footer-logo img {
+        max-width: 10vh;
+        margin-right: 5vh;
+    }
+    
+    .footer-links ul,
+    .footer-social ul {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .footer-links ul li,
+    .footer-social ul li {
+        display: inline-block;
+        margin-right: 0vh;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+    }
+    
+    .footer-links ul li a,
+    .footer-social ul li a {
+       text-decoration: none;
+       margin-left: 10px;
+    }
+    
+    .footer-info {
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    .footer-info p {
+        font-size: .8em;
+    }
+}

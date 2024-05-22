@@ -1,0 +1,64 @@
+.contacto {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contacto h1 {
+    color: #333;
+}
+
+.contacto p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.contacto form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.contacto form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.contacto form input[type="text"],
+.contacto form input[type="email"],
+.contacto form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contacto form textarea {
+    height: 150px;
+}
+
+.contacto form button {
+    background-color: #5566e6;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contacto form button:hover {
+    background-color: #3f4cab;
+}
+
+/*RESPONSIVE*/
+
+@media screen and (max-width: 768px) {
+    .contacto {
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+}

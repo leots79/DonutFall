@@ -1,0 +1,63 @@
+.container-nosotros {
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.container-nosotros p,
+.container-nosotros h1{
+    color: #642B4A;
+    margin-top: 2vh;
+}
+
+.container-nosotros p{
+    font-size: 1.3em;
+}
+
+.container-nosotros h1{
+    font-size: 5em;
+    margin-bottom: 8vh;
+}
+
+.nosotros-section,
+.equipo-section {
+    padding: 50px 0;
+}
+
+.nosotros-section h1,
+.equipo-section h2 {
+    text-align: center;
+}
+
+.equipo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.miembro-equipo {
+    text-align: center;
+}
+
+.miembro-equipo p,
+.miembro-equipo h3{
+    margin-top: 2vh;
+    font-size: 1.2em;
+    color: #471F35;
+}
+
+.miembro-equipo img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 50%;
+}
+
+/*RESPONSIVE*/
+
+@media screen and (max-width: 768px) {
+    .container-nosotros h1{
+        font-size: 3em;
+        margin-bottom: 3vh;
+    }
+    
+}
